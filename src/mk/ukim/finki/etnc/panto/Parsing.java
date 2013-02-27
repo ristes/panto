@@ -69,6 +69,7 @@ public class Parsing {
 			List<Tree> targets) {
 
 		List<Tree> childs = tree.getChildrenAsList();
+		Tree previousBaseNp;
 
 		boolean hasNpChilds = false;
 		boolean hasCC = false;
@@ -115,6 +116,8 @@ public class Parsing {
 	private QueryTripleElement getElementFromNounPhrase(Tree baseNp) {
 		return null;
 	}
+	
+	
 
 	public static void main(String[] args) {
 		demoAPI("Which is the longest river that flows thorught the states neighbouring Mississippi?");
